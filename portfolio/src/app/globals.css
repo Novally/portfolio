@@ -1,15 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #000;
+  --secondary: #847fbe;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #222739;
     --foreground: #ededed;
   }
 }
@@ -18,4 +16,57 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+li:visited {
+  color: #ededed;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  outline-style: solid;
+  outline-color: var(--secondary);
+  outline-width: 1px;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-img {
+  width: 60%
+}
+
+.navbar-navigation {
+  width:40%
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar-list li {
+  margin: 0;
+}
+
+.navbar-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-list a:hover {
+  text-decoration: underline;
+}
+
+/* Add some padding to the body to make room for the fixed navbar */
+body {
+  margin: 0;
+  padding-top: 50px; /* Adjust this value based on the height of your navbar */
 }

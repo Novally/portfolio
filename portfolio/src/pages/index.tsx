@@ -7,12 +7,8 @@ export default function App() {
     <Router>
       <div>
         <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about">About</Link></li>
         </ul>
 
         <Routes>
