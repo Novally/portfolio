@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Link from 'next/link';
 
 export default function App() {
   return (
@@ -7,10 +8,10 @@ export default function App() {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link href="/about">About</Link>
           </li>
         </ul>
 
