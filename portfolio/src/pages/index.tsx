@@ -4,18 +4,12 @@ import Link from 'next/link';
 
 export default function App() {
   return (
-    <Router>
-      <div>
-        <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/about">About</Link></li>
-        </ul>
+    <div className="container">
+      <h2>Welcome!</h2>
+      <p>Glad you found me in this corner of the internet.</p>
+      <hr />
+      <h4>Expertise:</h4>
 
-        <Routes>
-          <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/" element={<h1>Home</h1>} />
-        </Routes>
-      </div>
-    </Router>
+    </div>
   );
 }

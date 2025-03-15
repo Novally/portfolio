@@ -7,7 +7,7 @@ function App({Component, pageProps}: AppProps) {
   const [render, setRender] = useState(false);
   useEffect(() => setRender(true), []);
   return render ? 
-  <>
+    <>
       <Navbar />
       <div style={{ paddingTop: '50px' }}> {/* Adjust padding here */}
         <Component {...pageProps} />

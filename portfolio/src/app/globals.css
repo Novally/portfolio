@@ -23,6 +23,7 @@ li:visited {
 }
 
 /* Navbar Styles */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -68,5 +69,13 @@ li:visited {
 /* Add some padding to the body to make room for the fixed navbar */
 body {
   margin: 0;
-  padding-top: 50px; /* Adjust this value based on the height of your navbar */
+  padding-top: 30px;
+}
+
+hr {
+  color: var(--secondary);
+}
+
+.container {
+  padding: 20px;
 }

@@ -7,9 +7,9 @@ type AboutProp = {
 
 const About = ({ data }: AboutProp) => {
   return (
-    <div>
-      <h1>About</h1>
-      <p>{data}</p>
+    <div className="container">
+      <h1>Ally A</h1>
+      <p>Contact:</p>
     </div>
   );
 };
